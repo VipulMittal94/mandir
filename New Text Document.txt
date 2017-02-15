@@ -1,0 +1,16 @@
+It is a Single page application showing some places in Bikaner.
+
+How to open it in pc:
+
+1) You can clone the repository using GIT or
+2) Download the repository os a zip file.
+
+if you want to clone 
+a) open GIT
+b) command is 
+	git clone https://github.com/VipulMittal94/Neighbourhood-map.git
+
+How to open the file
+
+open the folder name Neighbourhood-map
+open index.html in that folder
