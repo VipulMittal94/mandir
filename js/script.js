@@ -5,8 +5,8 @@ var markers=[];
 var vm;
 function initMap() {
        map = new google.maps.Map(document.getElementById('map'),{
-        center: new google.maps.LatLng(28.022935,73.311916),
-        zoom:10,
+        center: new google.maps.LatLng(10.957025,78.066409),
+        zoom:13 ,
         mapTypeControl: false
        }); 
        //Instantiate ViewModel
@@ -14,6 +14,16 @@ function initMap() {
        //Apply bindings
        ko.applyBindings(vm);
 }
+$('.launch-map').on('click', function () {
+    
+    $('#modal').modal({
+        backdrop: 'static',
+        keyboard: false
+    }).on('shown.bs.modal', function () {
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(center);
+    });
+});
 
 //ViewModel
 var ViewModel=function(){
@@ -137,6 +147,7 @@ function populateInfoWindow(marker, infowindow) {
 function erroralert(){
   alert("Error loading data. Please check the connection or try again later.");
 }
+
 
 
 

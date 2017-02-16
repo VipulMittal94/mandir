@@ -83,10 +83,6 @@ var school = [{
         students:46 
 	},
 	{
-        title: 'Government Girls Secondary School(Harsho ka chowk)',
-        students: 
-	},
-	{
         title: 'Raju Public Sec. School',
         students:83 
 	},
@@ -121,10 +117,6 @@ var school = [{
 	{
         title: 'Shishu Kamal Bal Mandir School',
         students:114 
-	},
-	{
-        title: 'Shree Nehru Sharda Peeth PG College',
-        students: 
 	},
 	{
         title: 'Binani Girls College',
@@ -275,7 +267,7 @@ var school = [{
         students:147 
 	},
 	{
-        title: 'SHAHEED MAJOR JAMES THOMAS GOVT SR SEC SCHOOL Bikaner',
+        title: 'SHAHEED MAJOR JAMES THOMAS GOVT SR SEC SCHOOL',
         students:50 
 	},
 	{
@@ -682,10 +674,8 @@ var school = [{
         title: 'Jubilant academy',
         students:42 
 	}
-]
-var table = $('#table');
-table.append('<tr><th> School</th><th>No. of Students</th></tr>');
+];
 
-for (var i = 0; i < school.length; i++){
-    table.append('<tr><td>'+ school[i].title + '</td><td>' + school[i].students + '</td></tr>');	
-}
+school = school.title.sort();	
+
+

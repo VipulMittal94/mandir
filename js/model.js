@@ -1,5 +1,5 @@
 var model = [{
-        title: 'lksi jain madhyamik kanya vidyalaya',
+        title: 'Sh. LKSI Jain Kanya Madhyamik Vidyalaya',
         location: {
             lat:28.0075 ,
             lng:73.307 

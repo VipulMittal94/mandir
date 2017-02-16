@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<style>
+head,body{
+	height:100%;
+}
+.ins{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+	<div id="table"></div>
+
+
+	<script src="js/institute.js"></script>
+    <script>
+		var table = $('#table');
+
+		table.append("<div class = 'ins'> Institute's Name</div><div class = 'ins'>Students Participated</div>");
+		
+		school.forEach(function(i){
+			table.append("<div class = 'ins'>" + i.title + "</div><div class = 'ins'>" + i.students +"</div>");
+
+		});
+	</script>
+     
+</body>
+</html>

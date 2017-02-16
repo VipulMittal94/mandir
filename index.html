@@ -1,35 +1,26 @@
 <html>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-      <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-      <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-   </head>
- <body>
-     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#project1">Open Small Modal</button>
-
-   <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
-                </div>
-                <div class="modal-body">
-                <div id="map"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+  </head>
+  <body>
+       <button class="btn launch-map">Launch Map</button>
     </div>
+</div>
+<div id="modal" class="modal hide fade">
+    <div class="modal-body">
+        <div id="map-canvas"></div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-primary" data-value="1">Continue</button>
+        <button type="button" data-dismiss="modal" class="btn" data-value="0">Cancel</button>
+
     <div id="table">
     </div>
 
